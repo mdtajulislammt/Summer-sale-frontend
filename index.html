@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Summer Sale</title>
+     <!-- css farmwaork link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- icon link -->
+     <script src="https://kit.fontawesome.com/b15574ec5a.js" crossorigin="anonymous"></script>
+     <!-- text font link from google-fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+     <script>
+          tailwind.config = {
+               theme: {
+                    extend: {
+                         colors: {
+                              'primary-color': '#E527B2',
+                         }
+                    }
+               }
+          }
+     </script>
+</head>
+
+<body>
+     <header class="lg:px-32 py-7 lg:h-[100vh] md:h-[100vh] bg-[#F9F6E2]">
+          <div class=" lg:flex md:flex  justify-center items-center gap-12 lg:mt-0 md:mt-16 ">
+               <div class="text-center ">
+                    <p class="text-2xl font-medium mb-4">---SALE FEVER---</p>
+                    <h1 class="text-[30px] lg:text-[50px]  font-bold mb-10">Purchase TK 200 or <br> above & get
+                         <span class="text-primary-color">20% off</span>
+                    </h1>
+                    <p class="inline lg:text-xl font-medium">Use Promo Code</p>
+                    <button class="bg-primary-color text-white font-semibold rounded-lg px-6 py-2 ml-2">SELL200</button>
+               </div>
+               <div>
+                    <img class="lg:w-[550px] w-80 m-auto" src="/images/Summer 1.png" alt="">
+               </div>
+          </div>
+     </header>
+     <main class="lg:px-32 px-5 pt-20 bg-[#F8F8F8]">
+          <!-- Main container -->
+          <div class="lg:flex md:flex   lg:gap-5 md:gap-5">
+               <!-- main card container  -->
+               <div class="lg:w-[800px] lg:mb-28 mb-10 ">
+                    <!-- 1st card container  -->
+                    <h1 class="lg:text-4xl md:text-3xl text-3xl font-semibold  mb-4">Kitchenware</h1>
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4">
+
+                         <!-- 1st card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer" id="div1" >
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod1.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">K. Accessories</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 39.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 2nd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod2.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">K. Accessories</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 25.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 3rd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod3.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">Home Cooker</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 49.00 TK</h3>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- 2nd card container  -->
+                    <h1 class="lg:text-4xl md:text-3xl text-3xl font-semibold mt-14 mb-4">Sportswear</h1>
+                    <div  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+
+                         <!-- 1st card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod4.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">Sports Back Cap</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 49.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 2nd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod5.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-sm font-semibold">Full Jersey Set</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 69.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 3rd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod1.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-sm font-semibold">Sports cates</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 159.00 TK</h3>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- 3rd card container  -->
+                    <h1 class="lg:text-4xl md:text-3xl text-3xl font-semibold mt-14 mb-4">Furniture</h1>
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+
+                         <!-- 1st card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod7.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[16px] text-xl font-semibold">Single Relax Chair</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 185.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 2nd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod8.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">Children play</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 299.00 TK</h3>
+                              </div>
+                         </div>
+                         <!-- 3rd card   -->
+                         <div onclick="btnClickHandle(this)" class="rounded-lg bg-base-100 h-80 shadow-xl cursor-pointer">
+                              <div class="mx-4 mt-5   bg-gray-200 rounded-lg">
+                                   <img src="/images/prod9.png" class="p-3 m-auto w-36 h-40 " />
+                              </div>
+                              <div class="card-body items-center text-center">
+                                   <div class="text-[#FFC107]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                   </div>
+                                   <h2 class="lg:text-lg md:text-[17px] text-xl font-semibold">Flexible Sofa</h2>
+                                   <h3 class="text-lg font-normal text-gray-500"> 339.00 TK</h3>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- Calculator Cart container -->
+               <div class="lg:w-[350px] md:w-[300px] ">
+                    <div class="mt-14  lg:sticky lg:top-5 md:sticky md:top-3 " >
+                         <div class=" bg-base-100 lg:w-[400] shadow-2xl lg:mb-9 md:mb-3 mb-4 rounded-lg">
+                              <div class="card-body">
+                                   <h2 class="card-title">Have coupon?</h2>
+                                   <div class=" rounded-lg border-l border-t  border-b lg:w-[290px] " >
+                                        <input type="text" placeholder="Coupon code" id="cupon-input"
+                                             class=" lg:py-3  pl-3  lg:w-[200px] md:w-[160px]  w-[257px] border-none max-w-xs" />
+                                        <button id="btn-apply"
+                                              class="disabled:opacity-50 disabled:bg-gray-600 enabled:hover:text-black bg-primary-color text-white lg:text-lg font-semibold lg:px-4 px-2 lg:py-3 py-1 rounded-e-lg lg:ml-[0px] md:ml-[0px] ">Apply</button>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="  bg-base-100 shadow-xl rounded-lg">
+                              <div class=" card-body ">
+                                   <div class="text-xl font-medium list-none" id="items-select"> </div>
+                                   <div class="border-t-2 border-b-2 mb-3 mt-4">
+                                        <h3 class="text-lg font-semibold mt-4 mb-3">Total price: <span
+                                                  class="text-lg font-semibold text-gray-500" id="total-price">00.00</span> <span
+                                                  class="text-lg font-semibold text-gray-500">TK</span> </h3>
+                                        <h3 class="text-lg font-semibold  mb-3">Discount: <span
+                                                  class="text-lg font-semibold text-gray-500" id="discount">00.00</span> <span
+                                                  class="text-lg font-semibold text-gray-500">TK</span> </h3>
+                                        <h3 class="text-lg font-semibold  mb-3">Total: <span
+                                                  class="text-lg font-semibold text-gray-500" id="total">00.00</span> <span
+                                                  class="text-lg font-semibold text-gray-500">TK</span> </h3>
+
+                                   </div>
+                                   <div class="card-actions ">
+                                        <!-- Open the modal  -->
+                                        <button id="btn-make-purchase" onclick="my_modal_1.showModal()" 
+                                             class="disabled:opacity-70 enabled:hover:text-black disabled:bg-gray-600  bg-primary-color text-white  text-lg font-semibold px-4 py-3 rounded-lg w-full ">Make
+                                             Purchase
+                                        </button>
+                                        
+                                        <dialog id="my_modal_1" class="modal m-auto lg:w-[500px] md:w-[500px] w-[300px]">
+                                             <form method="dialog" class="modal-box text-center lg:py-20">
+                                                  <img src="/images/congo.png" alt="" class="m-auto">
+                                                  <h3 class="font-bold lg:text-5xl text-3xl">Congratulations</h3>
+                                                  <p class="py-4">Your Purchase the product</p>
+                                                  <div class=" ">
+                                                       <!-- if there is a button in form, it will close the modal -->
+                                                       <button class="bg-primary-color text-white hover:text-black text-lg font-semibold px-5 py-2 rounded-lg " id="btn-go-home">Go Home</button>
+                                                  </div>
+                                             </form>
+                                        </dialog>
+
+                                   </div>
+                                  
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+     </main>
+
+     <script src="/js/cart-calculate.js"></script>
+</body>
+
+</html>
